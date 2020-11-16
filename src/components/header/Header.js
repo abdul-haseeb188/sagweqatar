@@ -1,20 +1,15 @@
-import React from 'react';
+import React from "react";
+import "./headre.css";
 const Header = () => {
-
-    return (
-
-        <div>
-            Tesing Phase
-            Hy welcome to  header From Qasim for testing to push on git
-
-
-        </div>
-
-
-    );
-
-}
+  return (
+    <div>
+      <ul>
+        <li>Welocme</li>
+        <li>Login/registration</li>
+        <li>Vendor Registration</li>
+      </ul>
+    </div>
+  );
+};
 
 export default Header;
-
-
