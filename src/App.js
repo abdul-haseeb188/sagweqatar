@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import Subheader from './components/subheader/Subheader';
-import Search from './components/subheader/Search/Search';
+import Search from './components/Search/Search';
+import Header from './components/header/Header';
 function App() {
   return (
     <div className="App">
-      <Search/>
+       <Header/>
       <Subheader/> 
+      <Search />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
