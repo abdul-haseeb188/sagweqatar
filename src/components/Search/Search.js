@@ -1,12 +1,11 @@
 import React from "react";
 
-const Search = () =>{
-  return(
+const Search = () => {
+  return (
     <div>
-    <h2 style={{color:'red'}}>Hy I am haider Search Component </h2>
+      <input type="search" />
     </div>
   );
-}
-
+};
 
 export default Search;
