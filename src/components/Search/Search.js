@@ -1,5 +1,6 @@
 import React from "react";
 import "./search.css";
+import logo from "./../../logo.jpg";
 
 import { FaSearch, FaShoppingBag } from "react-icons/fa";
 import { GiHearts } from "react-icons/gi";
@@ -34,6 +35,7 @@ const Search = () => {
 
   return (
     <div>
+      <img src={logo} className="logo" alt="logo" />
       <FormControl className={classes.formControl} variant="filled">
         <InputLabel id="demo-simple-select-filled-label">Age</InputLabel>
         <Select
