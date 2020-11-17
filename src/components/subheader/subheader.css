@@ -1,7 +1,10 @@
 ul {
     display: flex;
     justify-content: flex-end;
+    background-color: #dcdedc;
+
    }
 li{
        list-style: none;
+       padding: 0 10px;
    }
