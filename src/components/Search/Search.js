@@ -1,6 +1,3 @@
-<<<<<<< HEAD
- import React from "react";
-=======
 import React from "react";
 import "./search.css";
 
@@ -27,7 +24,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   })
 );
->>>>>>> 4b8f5fb26f1af297c837aeedede30a535ed58e3c
 
 const Search = () => {
   const classes = useStyles();
@@ -38,10 +34,6 @@ const Search = () => {
 
   return (
     <div>
-<<<<<<< HEAD
-
-
-=======
       <FormControl className={classes.formControl} variant="filled">
         <InputLabel id="demo-simple-select-filled-label">Age</InputLabel>
         <Select
@@ -83,7 +75,6 @@ const Search = () => {
       <GiHearts size="28" />
       <FaShoppingBag size="28" />
       <TextField id="standard-basic" label="Standard" />
->>>>>>> 4b8f5fb26f1af297c837aeedede30a535ed58e3c
     </div>
   );
 };

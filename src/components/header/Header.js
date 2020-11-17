@@ -1,19 +1,6 @@
 import React from "react";
 import "./headre.css";
 const Header = () => {
-<<<<<<< HEAD
-
-    return (
-
-        <div>
-            
-        </div>
-
-
-    );
-
-}
-=======
   return (
     <div>
       <ul>
@@ -24,6 +11,5 @@ const Header = () => {
     </div>
   );
 };
->>>>>>> 4b8f5fb26f1af297c837aeedede30a535ed58e3c
 
 export default Header;
