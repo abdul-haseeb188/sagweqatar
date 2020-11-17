@@ -1,19 +1,22 @@
 import React from 'react';
 import DesiMarketLogo from '../../Images/kojE409403.jpg'; 
-import ShoppingCartSharpIcon from '@material-ui/icons/ShoppingCartSharp';
-import FavoriteSharpIcon from '@material-ui/icons/FavoriteSharp';
-
-
 import Grid from '@material-ui/core/Grid';
+import Searchbar from '../SearchBar/Search';
+import Badge from '@material-ui/core/Badge';
+import MailIcon from '@material-ui/icons/Mail';
+import { MdFavorite } from "react-icons/md";
 
-
-import Button from '@material-ui/core/Button';
-import Tooltip from '@material-ui/core/Tooltip';
-
+// import { FaShoppingBag } from "react-icons/fi";
+//import { FaShoppingBag } from "react-icons/fc";
+import { FaShoppingBag } from "react-icons/fa";
 const iconsstyl={
     fontSize: '40px',
     padding: '20px',
 }
+const iconsstyl3={
+    paddingTop: '35px',
+}
+
 const Header = () => {
    
     return (
@@ -28,20 +31,43 @@ const Header = () => {
                 </Grid>
 
 
-                <Grid item xs={6}>
-                    Search Bar Will Show Here
+                <Grid item xs={6} style={iconsstyl}>
+                    <Searchbar/>
                 </Grid>
 
 
-                <Grid item xs={3}>
+                <Grid item xs={3} style={iconsstyl3}>
 
-                    <Tooltip title="WishList" placement="bottom">
-                        <Button> <FavoriteSharpIcon style={iconsstyl} /></Button>
-                    </Tooltip>
-                    <Tooltip title="Add To Cart" placement="bottom">
-                        <Button>  <ShoppingCartSharpIcon style={iconsstyl} /></Button>
-                    </Tooltip>
-                   
+                  
+                    <MdFavorite size='50px' />
+
+                    <Badge anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'right',
+                    }} 
+                    className="count"
+                    color="secondary" badgeContent={5} showZero>
+                       
+                    </Badge>
+
+
+
+
+                    <FaShoppingBag size='40px' style={{marginTop: '20px'}} />
+
+                    <Badge anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'right',
+                    }}
+                        className="count"
+                        color="secondary" badgeContent={5} showZero>
+                         
+                    </Badge>
+                    <Badge>
+                    <p  >CART  ITEM</p>
+                
+                    </Badge>
+
                 </Grid>
             </Grid>
         </div>

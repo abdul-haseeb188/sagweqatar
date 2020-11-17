@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.search{
+  height: 48px;
+    width: 70%;
+    margin-top: 23px;
+}
+#demo-simple-select{
+         background: #145082;
+    color: white;
+    padding: 14px;
+}
+
+.count{
+  left: -12px;
+    bottom: 10px;
+}
