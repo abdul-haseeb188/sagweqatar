@@ -2,11 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import Subheader from './components/subheader/Subheader';
 import Header from './components/header/Header';
-
+import Topbar from './components/SearchBar/topbar';
+import UperNotify from './components/SearchBar/UperNotifation';
 
 function App() {
   return (
     <div className="App">
+
+      <UperNotify/>
+      <Topbar/>
        <Header/>
       <Subheader/> 
       <header className="App-header">

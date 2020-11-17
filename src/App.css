@@ -39,7 +39,7 @@
 
 .search{
   height: 48px;
-    width: 70%;
+    width: 60%;
     margin-top: 23px;
 }
 #demo-simple-select{
@@ -48,7 +48,37 @@
     padding: 14px;
 }
 
-.count{
+.favcount{
   left: -12px;
     bottom: 10px;
+}
+
+.cartcount{
+  left: -7px;
+    bottom: 5px;
+}
+
+.MuiBadge-colorSecondary {
+    color: #fff;
+    background-color: #145082 !important;
+}
+
+.srchiCon{
+  border: 1px #145082 solid;
+    position: relative;
+    top: 18px;
+    padding: 3px;
+    box-shadow: 0px 0px 10px inset #145082;
+}
+
+.topbar{
+  background: #f5f5f5;
+    padding: 10px;
+    text-align: end;
+}
+
+.crossIcon{
+  position: relative;
+    left: 139px;
+    filter: invert(50%);
 }

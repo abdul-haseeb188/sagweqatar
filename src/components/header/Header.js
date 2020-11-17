@@ -24,7 +24,7 @@ const Header = () => {
         <div>
          
 
-            <Grid container spacing={3}>
+            <Grid container >
                
                 <Grid item xs={3}>
                     <img src={DesiMarketLogo} />
@@ -38,35 +38,39 @@ const Header = () => {
 
                 <Grid item xs={3} style={iconsstyl3}>
 
+
+                 <Grid container>
+                        <Grid item xs={4} style={{ textAlign:'right' }}>
+                            <MdFavorite size='50px' />
+                                <Badge anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'right',
+                            }}
+                                className="favcount"
+                                color="secondary" badgeContent={5} showZero>
+                                 </Badge>
+                     </Grid>
+                        <Grid item xs={4} >
+                            <FaShoppingBag size='40px' style={{ marginTop: '7px' }} />
+                            <Badge anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'right',
+                            }}
+                                className="cartcount"
+                                color="secondary" badgeContent={20} showZero>
+                            </Badge>
+
+                        </Grid>
+                        <Grid item xs={4} style={{ textAlign: 'left' }}> <font style={{fontWeight:'bold'}}> CART </font> <br/>ITEM</Grid>
+                 </Grid>
+
                   
-                    <MdFavorite size='50px' />
-
-                    <Badge anchorOrigin={{
-                        vertical: 'bottom',
-                        horizontal: 'right',
-                    }} 
-                    className="count"
-                    color="secondary" badgeContent={5} showZero>
-                       
-                    </Badge>
+                    
 
 
 
 
-                    <FaShoppingBag size='40px' style={{marginTop: '20px'}} />
-
-                    <Badge anchorOrigin={{
-                        vertical: 'bottom',
-                        horizontal: 'right',
-                    }}
-                        className="count"
-                        color="secondary" badgeContent={5} showZero>
-                         
-                    </Badge>
-                    <Badge>
-                    <p  >CART  ITEM</p>
-                
-                    </Badge>
+                   
 
                 </Grid>
             </Grid>

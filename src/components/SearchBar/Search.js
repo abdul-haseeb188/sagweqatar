@@ -7,7 +7,9 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import '../../App.css';
 
-
+//import { GrFormSearch } from "react-icons/gi";
+ //import { GrFormSearch } from "react-icons/go";
+ import { GrFormSearch } from "react-icons/gr";
 
 
 
@@ -51,6 +53,11 @@ const Searchbar = () => {
 
                 <input type="search" name="search" className="search" placeholder="Search Products...." />
            
+
+              
+                <GrFormSearch className="srchiCon" />
+             
+
         </div>
     );
 }
