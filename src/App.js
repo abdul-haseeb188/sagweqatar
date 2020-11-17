@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+
 import Subheader from './components/subheader/Subheader';
 import Search from './components/Search/Search';
 import Header from './components/header/Header';
+import StatusBar from './components/status_bar/StatusBar';
 function App() {
   return (
     <div className="App">
-       <Header/>
+      <StatusBar />
+      <Header/>
       <Subheader/> 
       <Search />
       <header className="App-header">
