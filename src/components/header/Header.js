@@ -1,6 +1,6 @@
 
 import React from 'react';
-import DesiMarketLogo from '../../Images/kojE409403.jpg'; 
+import NewImg from '../../Images/kojE409403.jpg'; 
 import Grid from '@material-ui/core/Grid';
 import Searchbar from '../SearchBar/Search';
 import Badge from '@material-ui/core/Badge';
@@ -28,10 +28,10 @@ const Header = () => {
         <div>
          
 
-            <Grid container spacing={3}>
+            <Grid container >
                
                 <Grid item xs={3}>
-                    <img src={DesiMarketLogo} />
+                    <img src={NewImg} style={{borderRadius:'50%'}} />
                 </Grid>
 
 
@@ -110,6 +110,14 @@ const Header = () => {
 
                 </Grid>
             </Grid>
+    
+    
+    
+
+
+
+
+
         </div>
 
 

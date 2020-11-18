@@ -4,6 +4,8 @@ import StatusBar from "./components/status-bar/StatusBar";
 import Subheader from "./components/subheader/Subheader";
 import TopBar from "./components/status-bar/topBar";
 import Header from "./components/header/Header";
+import Testing from "./components/header/Testing";
+
 
 function App() {
   return (
@@ -12,7 +14,10 @@ function App() {
       <StatusBar />
       <Header />
       <Subheader />
-      {/* <Search /> */}
+
+      <Testing/>   
+        
+         {/* <Search /> */}
     </div>
   );
 }
