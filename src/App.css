@@ -1,3 +1,11 @@
+/* background-color :  #12497c ; */
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -39,7 +47,7 @@
 
 .search{
   height: 48px;
-    width: 70%;
+    width: 60%;
     margin-top: 23px;
 }
 #demo-simple-select{
@@ -48,7 +56,25 @@
     padding: 14px;
 }
 
-.count{
+.lovcount{
   left: -12px;
     bottom: 10px;
+}
+.shopcount{
+   left: -7px;
+    bottom: 4px;
+}
+
+.MuiBadge-colorSecondary {
+    color: #fff;
+    background-color: #145082 !important;
+}
+
+.srchicon{
+  border: 1px #145082 solid;
+    top: 19px;
+    position: relative;
+    padding: 3px;
+    box-shadow: 0px 0px 10px inset #145082;
+
 }
