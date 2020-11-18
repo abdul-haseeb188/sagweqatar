@@ -1,40 +1,40 @@
 import React from "react";
 import "./search.css";
 
-import { FaSearch, FaShoppingBag } from "react-icons/fa";
-import { GiHearts } from "react-icons/gi";
+// import { FaSearch, FaShoppingBag } from "react-icons/fa";
+// import { GiHearts } from "react-icons/gi";
 
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+// import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-import TextField from "@material-ui/core/TextField";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormHelperText from "@material-ui/core/FormHelperText";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
+// import TextField from "@material-ui/core/TextField";
+// import InputLabel from "@material-ui/core/InputLabel";
+// import MenuItem from "@material-ui/core/MenuItem";
+// import FormHelperText from "@material-ui/core/FormHelperText";
+// import FormControl from "@material-ui/core/FormControl";
+// import Select from "@material-ui/core/Select";
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    formControl: {
-      margin: theme.spacing(1),
-      minWidth: 120,
-    },
-    selectEmpty: {
-      marginTop: theme.spacing(2),
-    },
-  })
-);
+// const useStyles = makeStyles((theme: Theme) =>
+//   createStyles({
+//     formControl: {
+//       margin: theme.spacing(1),
+//       minWidth: 120,
+//     },
+//     selectEmpty: {
+//       marginTop: theme.spacing(2),
+//     },
+//   })
+// );
 
 const Search = () => {
-  const classes = useStyles();
-  const [age, setAge] = React.useState("");
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+//   const classes = useStyles();
+//   const [age, setAge] = React.useState("");
+//   const handleChange = (event) => {
+//     setAge(event.target.value);
+//   };
 
   return (
-    <div>
-      <FormControl className={classes.formControl} variant="filled">
+    <div>  search code
+     {/* // <FormControl className={classes.formControl} variant="filled">
         <InputLabel id="demo-simple-select-filled-label">Age</InputLabel>
         <Select
           labelId="demo-simple-select-filled-label"
@@ -74,7 +74,7 @@ const Search = () => {
 
       <GiHearts size="28" />
       <FaShoppingBag size="28" />
-      <TextField id="standard-basic" label="Standard" />
+      <TextField id="standard-basic" label="Standard" /> */}
     </div>
   );
 };
