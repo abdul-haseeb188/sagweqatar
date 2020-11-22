@@ -12,6 +12,8 @@ import '../../App.css';
  import { GrFormSearch } from "react-icons/gr";
 
 
+// import { GrFormSearch } from "react-icons/go";
+
 
 const Searchbar = () => {
     const useStyles = makeStyles((theme) => ({
@@ -52,10 +54,13 @@ const Searchbar = () => {
 
 
                 <input type="search" name="search" className="search" placeholder="Search Products...." />
+
+
+            <GrFormSearch className="srchicon" />
            
 
               
-                <GrFormSearch className="srchiCon" />
+                {/* <GrFormSearch className="srchiCon" /> */}
              
 
         </div>
