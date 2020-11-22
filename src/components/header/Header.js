@@ -1,74 +1,50 @@
 import React from "react";
-import "./headre.css";
-import Grid from '@material-ui/core/Grid';
-import imglogo from '../../images/haider.jpg';
-import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import Search from "../search/Search";
-import { BsFillHeartFill } from "react-icons/bs";
+import "./header.scss";
+import img from "../../images/JKB.png"
+import {ImMobile } from "react-icons/im";
+import { FcGoogle } from "react-icons/fc";
+import { SiFacebook } from "react-icons/si";
+import { TiSocialYoutubeCircular } from "react-icons/ti";
+import {FaInstagramSquare} from "react-icons/fa";
 const Header = () => {
-  const useStyles = makeStyles((theme) => ({
-    formControl: {
-      margin: theme.spacing(1),
-      minWidth: 120,
-    },
-    selectEmpty: {
-      marginTop: theme.spacing(2),
-    },
-  }));
-  const classes = useStyles();
-  const [age, setAge] = React.useState('');
+    return(
+       
+            <header className ="header">
+            <img src={img} className="jkb" alt= "logo" />
+            <ul className="menu">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Projects</li>
+                <li>Joint Ventures</li>
+                <li>Media</li>
+                <li>Buyer Guide</li>
+                <li>Carrer</li>
+                <li>Contacts</li>
+            </ul>
+            <ul className="icons">
+                <li>
+                <ImMobile size="28" />
+                <span>+923361105905</span>
+                </li>
+            <li>
+            <FcGoogle size="28"/>
+            <span>Reviwe</span>
+            </li>
+            </ul>
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+            <ul className="social_icons">
+                <SiFacebook  size="28" color="blue"/>
+                <TiSocialYoutubeCircular  size="35" color="#C4302B"/>
+                <FaInstagramSquare  size="28" color="red"/>
+            </ul>
 
-  return (
-    <div>
-      <ul>
-        <li>Welocme</li>
-        <li>Login/registration</li>
-        <li>Vendor Registration</li>
-      </ul>
-      <Grid container>
-        <Grid item md={4}>
-        <img src={imglogo} />
-
-        </Grid>
-
-        <Grid item md={4}>
-        <FormControl variant="filled" className={classes.formControl}>
-        <InputLabel id="demo-simple-select-filled-label">Age</InputLabel>
-        <Select
-          labelId="demo-simple-select-filled-label"
-          id="demo-simple-select-filled"
-          value={age}
-          onChange={handleChange}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-      <input type="text" id="lname" />
-      </Grid>
-        <Grid item md={4}>
-
-        </Grid>
-      </Grid>
-
-    </div>
-    
-
-
-  );
+            </header>
+           
+           
+      
+    );
 };
-
 export default Header;
+
+
+
