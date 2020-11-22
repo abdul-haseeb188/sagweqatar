@@ -1,3 +1,4 @@
+
 import React from "react";
 import { AiTwotoneLock } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -13,6 +14,7 @@ const StatusBar = () => {
         <font style={{ fontWeight: 'bold', color: 'gray',marginRight: '5px' }}>  Vendor Registration</font>
       
       </p>
+
     </div>
   );
 };

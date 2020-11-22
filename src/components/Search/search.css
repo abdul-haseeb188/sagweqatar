@@ -1,0 +1,16 @@
+.search-box {
+  width: 200px;
+  padding: 10px 20px;
+}
+
+.search-btn {
+  padding: 10px 10px;
+  background-color: blue;
+}
+
+/* .header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+} */
