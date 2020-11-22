@@ -10,6 +10,7 @@ const StatusBar = () => {
       <span>
         close
         <AiOutlineClose />
+        Changed By Haider
       </span>
     </div>
   );
