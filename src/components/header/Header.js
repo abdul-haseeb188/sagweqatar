@@ -1,43 +1,72 @@
 import React from "react";
 import "./header.scss";
-import img from "../../images/JKB.png"
-import {ImMobile } from "react-icons/im";
-import { FcGoogle } from "react-icons/fc";
-import { SiFacebook } from "react-icons/si";
-import { TiSocialYoutubeCircular } from "react-icons/ti";
-import {FaInstagramSquare} from "react-icons/fa";
+import img from "../../images/daraz.png"
+import { FiShoppingCart } from "react-icons/fi";
+import logo from "../../images/daraz-app.png";
+import { Button } from "@material-ui/core";
+import { GoSearch } from "react-icons/go";
+
+
 const Header = () => {
+
+    
     return(
-       
-            <header className ="header">
-            <img src={img} className="jkb" alt= "logo" />
-            <ul className="menu">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Projects</li>
-                <li>Joint Ventures</li>
-                <li>Media</li>
-                <li>Buyer Guide</li>
-                <li>Carrer</li>
-                <li>Contacts</li>
-            </ul>
-            <ul className="icons">
-                <li>
-                <ImMobile size="28" />
-                <span>+923361105905</span>
-                </li>
-            <li>
-            <FcGoogle size="28"/>
-            <span>Reviwe</span>
-            </li>
-            </ul>
+       <header className="header">
 
-            <ul className="social_icons">
-                <SiFacebook  size="28" color="blue"/>
-                <TiSocialYoutubeCircular  size="35" color="#C4302B"/>
-                <FaInstagramSquare  size="28" color="red"/>
-            </ul>
+           <div className="u-header">
+           
+               <ul className="link-bar">
+                   <li>SAVE MORE ON DARAZ</li>
+                   <li>DARAZ AFFILIATE PROGRAMM</li>
+                   <li>SELL ON DARAZ</li>
+                   <li>CUSTOMER CARE</li>
+                   <li>TAKE MY ORDER</li>
+                   <li>LOGIN</li>
+                   <li>SIGNUP</li>
+               </ul>
 
+               </div>
+               <div className ="logo">
+            
+            <img src={img} className="daraz" alt= "logo" />
+            <ul>
+            <input type="text" placeholder="Search in daraz..."   className="search"></input>
+            <Button className="btn">
+            <GoSearch  size="20" color="white"/>
+            </Button>
+            </ul>
+            
+            
+           
+            <FiShoppingCart size="30"/>
+
+            <img src={logo} className="daraz-app" alt= "logo" />
+            
+            </div>
+            <div className="l-header">
+                <div className="">
+                    <select className="drp-down">
+                        <option>Categories</option>
+                        <option>Electroonics devices</option>
+                        <option>haider</option>
+                        <option>shirt</option>
+                        <option>ali</option>
+                        <option>abbas</option>
+                        <option>qasim</option>
+                        <option>haseeb</option>
+                    </select>
+                    </div>
+                    <di>
+                    <ul className="menu">
+                    <li>DarazMall</li>
+                    <li>dMart</li>
+                    <li>Fashion & style</li>
+                    <li>Global Collection</li>
+                    <li>Digital Sahulat</li>
+                    </ul>
+                    </di>
+
+            </div>
             </header>
            
            
