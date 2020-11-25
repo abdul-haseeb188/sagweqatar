@@ -35,8 +35,6 @@ const Header = () => {
             <GoSearch  size="20" color="white"/>
             </Button>
             </ul>
-            
-            
            
             <FiShoppingCart size="30"/>
 
