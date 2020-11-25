@@ -9,7 +9,11 @@
   color: #595757;
    align-items: center;
    justify-content: flex-end;
-
+  a{
+    text-decoration: none;
+    color: #595757;
+   
+  }
   li{
     padding:0 10px;
     list-style: none;
@@ -17,9 +21,10 @@
    
     
   }
-  li:hover {
-    color:#f36f36; 
-  }
+ a:hover {
+  color:#f36f36; 
+    
+   }
 }
 
 //logo, search and social icons 
@@ -70,12 +75,17 @@
         color: #595757;
         margin-left: 100px;
       }
+      a{
+        text-decoration: none;
+        color: #595757;
+      }
       li{
         list-style: none;
         padding: 0 25px 0 25px;
+        font-weight: 400;
 
       }
-      li:hover {
+      a:hover {
                color:#f36f36; 
              }
             
@@ -83,6 +93,7 @@
           border: none;
           font-size: 15px;
           color: #595757;
+          text-decoration: none;
           
        
            }

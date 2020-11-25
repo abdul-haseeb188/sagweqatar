@@ -3,7 +3,7 @@ import "./header.scss";
 import img from "../../images/daraz.png"
 import { FiShoppingCart } from "react-icons/fi";
 import logo from "../../images/daraz-app.png";
-import { Button } from "@material-ui/core";
+import { Button, Grid } from "@material-ui/core";
 import { GoSearch } from "react-icons/go";
 
 
@@ -16,13 +16,13 @@ const Header = () => {
            <div className="u-header">
            
                <ul className="link-bar">
-                   <li>SAVE MORE ON DARAZ</li>
-                   <li>DARAZ AFFILIATE PROGRAMM</li>
-                   <li>SELL ON DARAZ</li>
-                   <li>CUSTOMER CARE</li>
-                   <li>TAKE MY ORDER</li>
-                   <li>LOGIN</li>
-                   <li>SIGNUP</li>
+                   <li ><a href="https://www.w3schools.com/" target="_blank">SAVE MORE ON DARAZ</a> </li>
+                   <li><a href="https://www.youtube.com/" target="_blank">DARAZ AFFILIATE PROGRAMM</a></li>
+                   <li><a href="https://www.w3schools.com/" target="_blank">SELL ON DARAZ</a></li>
+                   <li><a href="https://www.w3schools.com/" target="_blank">CUSTOMER CARE</a></li>
+                   <li><a href="https://www.w3schools.com/" target="_blank">TAKE MY ORDER</a></li>
+                   <li><a href="https://www.w3schools.com/" target="_blank">LOGIN</a></li>
+                   <li><a href="https://www.w3schools.com/" target="_blank">SIGNUP</a></li>
                </ul>
 
                </div>
@@ -56,15 +56,21 @@ const Header = () => {
                     </div>
                     <di>
                     <ul className="menu">
-                    <li>DarazMall</li>
-                    <li>dMart</li>
-                    <li>Fashion & style</li>
-                    <li>Global Collection</li>
-                    <li>Digital Sahulat</li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">DarazMall</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">dMart</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">Fashion & style</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">Global Collection</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">Digital Sahulat</a></li>
                     </ul>
                     </di>
 
             </div>
+            <Grid className="container">
+                <grid >
+
+                </grid>
+
+            </Grid>
             </header>
            
            
