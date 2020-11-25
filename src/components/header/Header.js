@@ -44,7 +44,7 @@ const Header = () => {
             
             </div>
             <div className="l-header">
-                <div className="">
+                <div>
                     <select className="drp-down">
                         <option>Categories</option>
                         <option>Electroonics devices</option>
